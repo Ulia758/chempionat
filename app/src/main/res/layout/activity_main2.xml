@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/roboto_black"
         android:gravity="center"
         android:text="Quick Delivery At Your Doorstep"
@@ -49,7 +49,6 @@
         android:id="@+id/button"
         android:layout_width="103dp"
         android:layout_height="58dp"
-        android:layout_marginTop="67dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="#00FFFFFF"
         android:text="Skip"
@@ -58,16 +57,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:strokeColor="@color/_bg___splash_ek2_color"
         app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="98dp"
-        android:layout_height="53dp"
+        android:layout_width="103dp"
+        android:layout_height="58dp"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="67dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@color/_bg___splash_ek2_color"
         android:text="Next"
@@ -76,7 +73,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:strokeColor="@color/_bg___splash_ek2_color"
         app:strokeWidth="2dp" />
 

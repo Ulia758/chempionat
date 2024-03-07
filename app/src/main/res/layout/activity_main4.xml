@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:src="@tools:sample/avatars"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,27 +22,27 @@
         android:id="@+id/textView"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/roboto_black"
         android:gravity="center"
         android:text="Real-time Tracking"
         android:textColor="@color/_bg___splash_ek2_color"
         android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginBottom="112dp"
         android:gravity="center"
         android:text="Track your packages/items from the comfort of your home till final destination"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
@@ -49,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/_bg___splash_ek2_color"
         android:text="Sign Up"
         android:textColor="@color/white"
@@ -56,7 +58,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:strokeColor="@color/_bg___splash_ek2_color"
         app:strokeWidth="2dp" />
 
@@ -64,6 +65,7 @@
         android:id="@+id/textView3"
         android:layout_width="245dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="@string/already_have_an_account"
