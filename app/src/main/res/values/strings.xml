@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Chempionat</string>
+    <string name="already_have_an_account">Already have an account? <font color='#0560FA'>Sign in</font></string>
+</resources>
