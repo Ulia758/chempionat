@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Chempionat</string>
     <string name="already_have_an_account">Already have an account? <font color='#0560FA'>Sign in</font></string>
+    <string name="terms">By ticking this box, you agree to our <font color='#EBBC2E'>Terms and conditions and private policy</font></string>
 </resources>
