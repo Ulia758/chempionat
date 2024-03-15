@@ -4,5 +4,9 @@
     <string name="have_an_account">Already have an account? <font color='#0560FA'>Sign Up</font></string>
     <string name="terms">By ticking this box, you agree to our <font color='#EBBC2E'>Terms and conditions and private policy</font></string>
     <string name="remember_password">Remember password? Back to <font color='#0560FA'>Sign in</font></string>
+    <string name="title_activity_main19">MainActivity19</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>
