@@ -14,11 +14,7 @@ class MainActivity : AppCompatActivity() {
         //переход на следующую страницу с задержкой
         Handler().postDelayed({
             startActivity(
-                Intent(
-                    this@MainActivity,
-                    MainActivity2::class.java
-                )
-            )
+                Intent(this@MainActivity, MainActivity2::class.java))
             finish()
         },2000)
 

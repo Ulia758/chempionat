@@ -1,4 +1,4 @@
-package ru.netology.chempionat.ui.notifications
+package ru.netology.chempionat.ui.wallet
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import ru.netology.chempionat.databinding.FragmentNotificationsBinding
+import ru.netology.chempionat.databinding.FragmentWalletBinding
 
-class NotificationsFragment : Fragment() {
+class WalletFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentWalletBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class NotificationsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+        val walletViewModel =
+            ViewModelProvider(this).get(WalletViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentWalletBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textWallet
+        walletViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

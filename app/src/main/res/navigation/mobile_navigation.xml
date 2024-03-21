@@ -8,18 +8,63 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="ru.netology.chempionat.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_wallet"
+            app:destination="@id/navigation_wallet" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_track"
+            app:destination="@id/navigation_track" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="ru.netology.chempionat.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_wallet"
+        android:name="ru.netology.chempionat.ui.wallet.WalletFragment"
+        android:label="Wallet"
+        tools:layout="@layout/fragment_wallet" >
+        <action
+            android:id="@+id/action_navigation_wallet_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_wallet_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_wallet_to_navigation_track"
+            app:destination="@id/navigation_track" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="ru.netology.chempionat.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_track"
+        android:name="ru.netology.chempionat.ui.track.TrackFragment"
+        android:label="Track"
+        tools:layout="@layout/fragment_track" >
+        <action
+            android:id="@+id/action_navigation_track_to_navigation_wallet"
+            app:destination="@id/navigation_wallet" />
+        <action
+            android:id="@+id/action_navigation_track_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_track_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="ru.netology.chempionat.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_track"
+            app:destination="@id/navigation_track" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_wallet"
+            app:destination="@id/navigation_wallet" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>
