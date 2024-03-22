@@ -19,12 +19,19 @@ class MainActivity6 : AppCompatActivity() {
             )
         )
     }
-
     fun onClickText2Forgot(view: View) {
         startActivity(
             Intent(
                 this@MainActivity6,
                 MainActivity7::class.java
+            )
+        )
+    }
+    fun onClickButton(view: View) {
+        startActivity(
+            Intent(
+                this@MainActivity6,
+                MainActivity10::class.java
             )
         )
     }

@@ -59,6 +59,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#27000000"
+        android:onClick="onClickButton"
         android:text="Sign In"
         android:textColor="@color/white"
         android:textSize="16sp"

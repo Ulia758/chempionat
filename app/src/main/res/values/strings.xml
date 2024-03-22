@@ -8,5 +8,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="currentBalance">Current balance: <font color='#0560FA'>N10,712:00</font></string>
+    <string name="onClickButton" />
 
 </resources>

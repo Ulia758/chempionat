@@ -10,12 +10,19 @@ class MainActivity5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main5)
     }
-
     fun onClickText(view: View) {
         startActivity(
             Intent(
                 this@MainActivity5,
                 MainActivity6::class.java
+            )
+        )
+    }
+    fun onClickButton(view: View) {
+        startActivity(
+            Intent(
+                this@MainActivity5,
+                MainActivity10::class.java
             )
         )
     }

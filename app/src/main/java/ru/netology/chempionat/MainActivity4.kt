@@ -16,7 +16,7 @@ class MainActivity4 : AppCompatActivity() {
             startActivity(
                 Intent(
                     this@MainActivity4,
-                    MainActivity5::class.java
+                    WhiteScreen::class.java
                 )
             )
         }
