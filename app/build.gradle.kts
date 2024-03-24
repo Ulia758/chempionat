@@ -54,4 +54,8 @@ dependencies {
 
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation ("com.google.android.material:material:1.11.0")
+
+    implementation("io.github.jan-tennert.supabase:gotrue-kt:1.3.2")
+    implementation("io.ktor:ktor-client-cio:2.3.4")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 }
