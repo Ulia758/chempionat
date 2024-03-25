@@ -21,23 +21,14 @@ class MainActivity5 : AppCompatActivity() {
         signInButton=findViewById(R.id.textView11)
     }
     fun onClickText(view: View) {
-        startActivity(
-            Intent(
-                this@MainActivity5,
-                MainActivity6::class.java
+        startActivity(Intent(this@MainActivity5, MainActivity6::class.java
             )
         )
     }
     fun onClickButton(view: View) {
         val email = emailEditText.text
         val password = passwordEditText.text
-//        SupabaseAuthViewModel().signUp(applicationContext,email,password)
-
-        startActivity(
-            Intent(
-                this@MainActivity5,
-                MainActivity10::class.java
-            )
-        )
+        SupabaseAuthViewModel().signUp(applicationContext,email.toString(),password.toString())
+        startActivity(Intent(this@MainActivity5, MainActivity10::class.java))
     }
 }
